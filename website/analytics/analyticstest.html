@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>User Pulse</title>
+  <link rel="stylesheet" type="text/css"
+      href="//fonts.googleapis.com/css?family=Cantarell|Inconsolata">
+  <link rel="stylesheet" type="text/css"
+      href="pretty.css">
+</head>
+<body>
+<h1>User Pulse</h1>
+
+<hr>
+<button id="run-demo-button" style="visibility: hidden">Get Pulse</button>
+<button id="authorize-button" style="visibility: hidden">Authorize</button>
+<p>Last
+<SELECT id='period' name='period'>
+    <option value=10>10</option>
+    <option value=30>30</option>
+    <option value=60>60</option>
+    <option value=90>90</option>
+</SELECT>
+Days</p>
+<hr>
+
+<div id="output">Loading, one sec....</div>
+
+<script src="auth_util.js"></script>
+<script src="analyticstest.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+</body>
+</html>
